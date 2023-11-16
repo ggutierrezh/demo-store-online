@@ -10,5 +10,5 @@ import mx.demo.store.serviceproduct.entity.ProductEntity;
 @Repository
 public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
 	
-	public List<ProductEntity> findByCategoryEntity(CategoryEntity categoryEntity);
+	public List<ProductEntity> findByCategory(CategoryEntity categoryEntity);
 }

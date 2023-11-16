@@ -58,7 +58,7 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public List<ProductEntity> findByCategory(CategoryEntity categoryEntity) {
-		return productRepository.findByCategoryEntity(categoryEntity);
+		return productRepository.findByCategory(categoryEntity);
 	}
 
 	@Override
