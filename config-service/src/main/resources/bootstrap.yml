@@ -7,4 +7,12 @@ spring:
     config:
       server:
         git:
-          uri
+          uri: https://github.com/ggutierrezh/demo-store-online.git
+          search-paths: config-data
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+
+  security:
+    user:
+      name: root
+      password: s3cr3t          
