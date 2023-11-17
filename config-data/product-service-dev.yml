@@ -2,6 +2,9 @@
 server:
   port: 8090
   
+msg:
+    print: Mensaje de DEV product
+  
 # H2 Console in Browser
 # http://localhost:8090/h2-console
 # Enabling H2 Console
