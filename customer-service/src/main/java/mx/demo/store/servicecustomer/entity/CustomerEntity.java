@@ -48,7 +48,7 @@ public class CustomerEntity implements Serializable {
 	
 	@NotEmpty(message = "El campo email NO puede estar vacío")
 	@Email(message = "El email NO es un correo de formato valido")
-	@Column(name = "last_name", nullable = false)
+	@Column(name = "email", nullable = false)
 	private String email;
 	
 	@NotNull(message = "La region NO puede ser NULL")
