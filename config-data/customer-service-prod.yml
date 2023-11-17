@@ -4,4 +4,4 @@ server:
   
   
 msg:
-    print: Mensaje de PROD Customer
+  print: Mensaje de PROD Customer

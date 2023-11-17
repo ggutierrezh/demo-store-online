@@ -3,7 +3,7 @@ server:
   port: 8090
   
 msg:
-    print: Mensaje de PROD product
+  print: Mensaje de PROD product
 
 # H2 Console in Browser
 # http://localhost:8090/h2-console

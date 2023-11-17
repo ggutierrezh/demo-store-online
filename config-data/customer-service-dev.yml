@@ -4,4 +4,4 @@ server:
   
   
 msg:
-    print: Mensaje de DEV Customer
+  print: Mensaje de DEV Customer
