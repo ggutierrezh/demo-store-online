@@ -5,6 +5,7 @@ spring:
   profiles:
     active:
     - prod
+    - dev
   cloud:
     config:
       server:
