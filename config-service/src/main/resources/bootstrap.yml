@@ -13,8 +13,8 @@ spring:
           # El repo debe ser public
           uri: https://github.com/ggutierrezh/demo-store-online.git
           searchPaths: config-data
-          username: germangh2018@gmail.com
-          password: krlqabXamarin2021**
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
           default-label: "main"
 
   security:
