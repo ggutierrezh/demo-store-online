@@ -1,6 +1,6 @@
 spring:
   application:
-    name: shopping-service-dev
+    name: shopping-service
     
   cloud:
     config:

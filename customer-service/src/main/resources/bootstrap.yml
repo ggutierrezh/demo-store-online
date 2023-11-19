@@ -1,6 +1,6 @@
 spring:
   application:
-    name: customer-service-dev
+    name: customer-service
     
   cloud:
     config:
