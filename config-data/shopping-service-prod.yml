@@ -1,0 +1,15 @@
+# Application Configuration
+server:
+  port: 8092
+  
+msg:
+  print: Mensaje de PROD shopping
+
+#logging:
+#  pattern:
+#    console: "%{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN: -%5p} %m%n"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka

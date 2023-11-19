@@ -26,3 +26,4 @@ INSERT INTO tbl_regions (id, name) VALUES (7, 'Oceanía');
 INSERT INTO tbl_regions (id, name) VALUES (8, 'Antártida');
 
 INSERT INTO tbl_customers (id,number_id,first_name,last_name , email, region_id, state) VALUES(1,'32404580', 'Andrés', 'Guzmán', 'profesor@bolsadeideas.com',1,'CREATED');
+INSERT INTO tbl_customers (id,number_id,first_name,last_name , email, region_id, state) VALUES(2,'32404581', 'Germán', 'Gutiérrez', 'german@codehaus.it.com',6,'CREATED');
