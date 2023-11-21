@@ -20,6 +20,8 @@ eureka:
 
 Feing:
   hystrix:
+    dashboard:
+      proxyStreamAllowList=*
     enabled: true
 management:
   endpoints:

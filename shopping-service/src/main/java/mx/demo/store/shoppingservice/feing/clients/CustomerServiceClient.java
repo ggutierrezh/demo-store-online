@@ -4,11 +4,12 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import mx.demo.store.shoppingservice.dto.CustomerDto;
 
-@FeignClient(name = "customer-service")
+@FeignClient(name = "CUSTOMER-SERVICE", fallback = CustomerHystrixFallbackFactory.class)
 public interface CustomerServiceClient {
 	
-	@GetMapping(path = "/customer")
-	public ResponseEntity<List<Object>> getAll();
+	@GetMapping(path = "/customers")
+	public ResponseEntity<List<CustomerDto>> getAll();
 
 }
