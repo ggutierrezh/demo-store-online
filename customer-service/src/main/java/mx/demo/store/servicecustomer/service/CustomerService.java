@@ -5,5 +5,6 @@ import mx.demo.store.servicecustomer.entity.CustomerEntity;
 
 public interface CustomerService {
 
-	public List<CustomerEntity> findCustomerAll();
+	public List<CustomerEntity> findCustomerAll();	
+	public CustomerEntity findCustomerByNumberId(String id);
 }

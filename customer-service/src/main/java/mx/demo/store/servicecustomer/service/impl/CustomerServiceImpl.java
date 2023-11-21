@@ -17,5 +17,10 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public List<CustomerEntity> findCustomerAll(){
 		return customerRepository.findAll();
+	}
+
+	@Override
+	public CustomerEntity findCustomerByNumberId(String id) {
+		return customerRepository.findByNumberID(id);
 	}	
 }
