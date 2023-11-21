@@ -3,7 +3,6 @@ package mx.demo.store.shoppingservice.controller;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +22,18 @@ public class ShoppingController {
 	
 	private CustomerServiceClient customerServiceClient;
 	private ProductServiceClient productServiceClient;
+	
+	
+	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Map<String, String>> getProductsAndCustomers(){
+		
+		List<ProductDto> listProducts = productServiceClient.listProduct().getBody();
+		List<CustomerDto> listCustomers = customerServiceClient.getAll().getBody();
+		Map<String, String> map = new HashMap<>();
+		map.put("listProducts", listProducts == null || listProducts.isEmpty() ? "" : listProducts.toString());
+		map.put("listCustomers", listCustomers == null || listCustomers.isEmpty() ? "" : listCustomers.toString());
+		return ResponseEntity.ok().body(map);
+	}
 
 	// Metodo que manda a llamar los ms como prueba
 	// esto con el objetivo de utlizar Hystrix, microservicios tolerantes a fallos
@@ -40,9 +51,9 @@ public class ShoppingController {
 	@GetMapping(value = "/customers")
 	public ResponseEntity<Map<String, List<CustomerDto>>> getCutomers(){
 		
-		List<CustomerDto> listCustomer = customerServiceClient.getAll().getBody();
+		List<CustomerDto> listCustomers = customerServiceClient.getAll().getBody();
 		Map<String, List<CustomerDto>> map = new HashMap<>();
-		map.put("listCustomer", listCustomer);
+		map.put("listCustomers", listCustomers);
 		return ResponseEntity.ok().body(map);
 	}
 }

@@ -18,8 +18,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka
 
-Feing:
-  hystrix:
+hystrix:
     dashboard:
       proxy-stream-allow-list: "*"
     enabled: true
