@@ -21,11 +21,11 @@ spring:
       enabled: true
 
 # Actuator
-#management:
- # endpoints:
-  #  web:
+management:
+  endpoints:
+    web:
       exposure:
-   #     include: "*"
+        include: "*"
   #endpoint:
    # health:
     #  show-details: always
