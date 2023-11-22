@@ -9,3 +9,9 @@ spring:
       username: root
       password: s3cr3t
 
+# Conexión al Admin Server
+  boot:
+    admin:
+      client:
+        url:
+        - http://localhost:8097
