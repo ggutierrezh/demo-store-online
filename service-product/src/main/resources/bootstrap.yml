@@ -9,8 +9,10 @@ spring:
       username: root
       password: s3cr3t
 
-# Conexión al Admin Server
+# Conexión al Admin Server    
   boot:
     admin:
       client:
         url: http://localhost:8097
+        instance:
+          management-base-url: http://localhost:8097
